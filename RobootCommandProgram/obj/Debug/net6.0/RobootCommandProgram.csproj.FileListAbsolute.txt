@@ -1,0 +1,15 @@
+C:\Users\Neelam_Chourey\source\repos\RobootCommandProgram\RobootCommandProgram\bin\Debug\net6.0\RobootCommandProgram.exe
+C:\Users\Neelam_Chourey\source\repos\RobootCommandProgram\RobootCommandProgram\bin\Debug\net6.0\RobootCommandProgram.deps.json
+C:\Users\Neelam_Chourey\source\repos\RobootCommandProgram\RobootCommandProgram\bin\Debug\net6.0\RobootCommandProgram.runtimeconfig.json
+C:\Users\Neelam_Chourey\source\repos\RobootCommandProgram\RobootCommandProgram\bin\Debug\net6.0\RobootCommandProgram.dll
+C:\Users\Neelam_Chourey\source\repos\RobootCommandProgram\RobootCommandProgram\bin\Debug\net6.0\RobootCommandProgram.pdb
+C:\Users\Neelam_Chourey\source\repos\RobootCommandProgram\RobootCommandProgram\obj\Debug\net6.0\RobootCommandProgram.csproj.AssemblyReference.cache
+C:\Users\Neelam_Chourey\source\repos\RobootCommandProgram\RobootCommandProgram\obj\Debug\net6.0\RobootCommandProgram.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Neelam_Chourey\source\repos\RobootCommandProgram\RobootCommandProgram\obj\Debug\net6.0\RobootCommandProgram.AssemblyInfoInputs.cache
+C:\Users\Neelam_Chourey\source\repos\RobootCommandProgram\RobootCommandProgram\obj\Debug\net6.0\RobootCommandProgram.AssemblyInfo.cs
+C:\Users\Neelam_Chourey\source\repos\RobootCommandProgram\RobootCommandProgram\obj\Debug\net6.0\RobootCommandProgram.csproj.CoreCompileInputs.cache
+C:\Users\Neelam_Chourey\source\repos\RobootCommandProgram\RobootCommandProgram\obj\Debug\net6.0\RobootCommandProgram.dll
+C:\Users\Neelam_Chourey\source\repos\RobootCommandProgram\RobootCommandProgram\obj\Debug\net6.0\refint\RobootCommandProgram.dll
+C:\Users\Neelam_Chourey\source\repos\RobootCommandProgram\RobootCommandProgram\obj\Debug\net6.0\RobootCommandProgram.pdb
+C:\Users\Neelam_Chourey\source\repos\RobootCommandProgram\RobootCommandProgram\obj\Debug\net6.0\RobootCommandProgram.genruntimeconfig.cache
+C:\Users\Neelam_Chourey\source\repos\RobootCommandProgram\RobootCommandProgram\obj\Debug\net6.0\ref\RobootCommandProgram.dll
