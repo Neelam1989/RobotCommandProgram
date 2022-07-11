@@ -1,17 +1,10 @@
 # RobotCommandProgram
 
-I have put commands for example 3 in RobotCommand Parameter code
+RobotCommandProgram is console application, please click on run button in visual studio to run this app and give your commonds
 
-> PLACE 1, 2, EAST
-> MOVE
-> MOVE
-> LEFT
-> MOVE
-> REPORT
+To see the output of any commands please give "REPORT" commond
 
-Output : 3, 3, NORTH
 
-For testing with other examples please change the command in Main() function
 
 
 
