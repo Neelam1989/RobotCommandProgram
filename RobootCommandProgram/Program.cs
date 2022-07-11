@@ -5,14 +5,26 @@ public class Program
 	public static void Main()
 	{
 		Robot robot = new Robot();
+		var Parameter = "";
 
-		robot.ExecuteCommand("PLACE", "1,2,EAST");
-		robot.ExecuteCommand("MOVE", null);
-		robot.ExecuteCommand("MOVE", null);
-		robot.ExecuteCommand("LEFT", null);
-		robot.ExecuteCommand("MOVE", null);
+		for (int i = 0; i >= 0; i++)
+		{
+			Console.WriteLine("Please enter Command.");
+			var command = Console.ReadLine();
+			if(command.ToUpper() == "PLACE")
+            {
+				Console.WriteLine("Please enter Parameter.");
+				Parameter = Console.ReadLine();
+			}			
+			if (command.ToUpper() == "REPORT")
+			{
+				Console.WriteLine("The output of this command is " + robot.ExecuteCommand("REPORT", null));
+				break;
+			}
+			robot.ExecuteCommand(command, Parameter);
 
-		Console.WriteLine(robot.ExecuteCommand("REPORT", null));
+		}
+
 	}
 }
 
@@ -41,6 +53,7 @@ public class Robot
 			case "REPORT":
 				return GetReport();
 			default:
+				Console.WriteLine("Unknown command");
 				throw new ArgumentException("Unknown command");
 		}
 
@@ -53,12 +66,8 @@ public class Robot
 
 		if (!RobotDirection.HasValue && !position.RobotDirection.HasValue)
 		{
+			Console.WriteLine("Invalid command parameters. Direction must be specified");
 			throw new ArgumentException("Invalid command parameters. Direction must be specified");
-		}
-
-		if (!IsValidPosition(position.X, position.Y, position.RobotDirection))
-		{
-			throw new ArgumentException("Invalid command. Robot isn't placed correctly");
 		}
 
 		X = position.X;
@@ -113,6 +122,7 @@ public class Robot
 
 		if (!IsValidPosition(newXPOS, newYPOS, RobotDirection))
 		{
+			Console.WriteLine("Invalid command. This move will place robot in an invalid position");    
 			throw new ArgumentException("Invalid command. This move will place robot in an invalid position");
 		}
 
@@ -129,6 +139,7 @@ public class Robot
 	{
 		if (!IsValidPosition(X, Y, RobotDirection))
 		{
+			Console.WriteLine("Invalid command. Robot isn't placed correctly");
 			throw new ArgumentException("Invalid command. Robot isn't placed correctly");
 		}
 	}
@@ -154,6 +165,7 @@ public class Position
 
 		if (paramArray.Length < 2 || paramArray.Length > 3)
 		{
+            Console.WriteLine("Invalid command parameters. Position coordinates must be specified");
 			throw new ArgumentException("Invalid command parameters. Position coordinates must be specified");
 		}
 
@@ -162,7 +174,7 @@ public class Position
 
 		if (paramArray.Length > 2)
 		{
-			position.RobotDirection = (Directions)Enum.Parse(typeof(Directions), paramArray[2]);
+			position.RobotDirection = (Directions)Enum.Parse(typeof(Directions), paramArray[2].ToUpper());
 		}
 
 		return position;
